@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!--Bir xml dosyasi ile projemizdn istedigimiz testleri ,package lari ,classlari veya test methodlarini calistirabilirz
+ bunun icin yapmamaz gereken suiteden baslayip test hiyerarsisine uygun olarak calisacak tum testleri xml formatinda yazmamizdir
+ eger istedigimiz tum testlere ulasmak icin birden fazla hiyerarsi olusturmamiz gerekirse sonraki hiyerarsileri uygun adimlardan baslatmamiz gerekir-->
+<suite name="istenen classlari calistirma">
+    <test name="classlar">
+        <classes>
+            <class name="tests.day16_notations.C03_priorty"></class>
+            <class name="tests.day17_PageObjectModel.C04_PositiveTest"></class>
+        </classes>
+    </test>
+</suite>

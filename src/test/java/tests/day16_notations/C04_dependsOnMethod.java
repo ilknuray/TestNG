@@ -28,10 +28,10 @@ public class C04_dependsOnMethod extends TestBase {
     public void tearDown(){
         driver.close();
     }
-    @Test
+    @Test(groups = {"grup1","grup2"})
     public void test01(){
         //amazon anasayfaya gidelim
-        driver.get("https://www.ramazon1.com");
+        driver.get("https://www.amazon.com");
     }
 
     @Test(dependsOnMethods = "test01")
@@ -41,7 +41,7 @@ public class C04_dependsOnMethod extends TestBase {
         aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
     }
 
-    @Test(dependsOnMethods = "test02")
+    @Test
     public void test03() {
         //sonuc yazisinin nutella icerdigini test edelim
         WebElement sonucYazisi= driver.findElement(By.xpath("//*[@class=\"a-section a-spacing-small a-spacing-top-small\"]"));

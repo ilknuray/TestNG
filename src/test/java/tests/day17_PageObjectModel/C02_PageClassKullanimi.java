@@ -7,7 +7,7 @@ import pages.AmazonPage;
 import utilities.Driver;
 
 public class C02_PageClassKullanimi {
-    @Test
+    @Test(groups = "grup1")
     public void test01() {
         AmazonPage amazonPage=new AmazonPage();
         //amazona gidelim nutella aratalim sonuc yazisinin nutella icerdigini test edelim

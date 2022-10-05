@@ -10,7 +10,7 @@ public class C03_priorty extends TestBase {
 
     priorty kucukten buyuge gore calisir eger bir test methoduna priorty degeri atanmamissa default olarak priorty=0 olarak kabul edilir
      */
-    @Test(priority = 5)
+    @Test(priority = 0)
     public void amazonTest() {
         driver.get("https://www.amazon.com");
 
@@ -21,7 +21,7 @@ public class C03_priorty extends TestBase {
         driver.get("https://www.bestbuy.com");
     }
 
-    @Test
+    @Test(groups = "grup1")
     public void techproTest() {
         driver.get("https://www.techproeducation.com");
     }
