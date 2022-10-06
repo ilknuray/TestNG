@@ -59,4 +59,14 @@ public class RentalPages {
     @FindBy(xpath = "//button[@class='w-100 btn btn-primary btn-lg']")
     public WebElement continueButton;
 
+    @FindBy(xpath = "//input[@id='formBasicEmail']")
+    public WebElement girisMail;
+    @FindBy(xpath = "//input[@id='formBasicPassword']")
+    public WebElement parola;
+    @FindBy(xpath = "//button[@class='btn btn-primary']")
+    public WebElement girisTik;
+    @FindBy(xpath = "//button[@id='dropdown-basic-button']")
+    public WebElement isim;
+
+
 }

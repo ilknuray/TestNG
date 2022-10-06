@@ -19,6 +19,7 @@ public class C02_Screenshot {
         //sayfanin resmini aliniz.
         ReusableMethods.getScreenshot("hepsiburada");
         Driver.closeDriver();
+        
 
 
     }

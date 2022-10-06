@@ -1,7 +1,5 @@
-package tests.day19_smokeTest;
+package tests.day21_ReusableMethodsHtmlRaports;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,7 +7,7 @@ import pages.RentalPages;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class C01_PositiveLoginTest {
+public class C04_PozitifLognTestRaporlu {
     @Test
     public void test() {
         RentalPages rentalPages = new RentalPages();
