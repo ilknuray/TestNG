@@ -28,13 +28,13 @@ public class C04_dependsOnMethod extends TestBase {
     public void tearDown(){
         driver.close();
     }
-    @Test(groups = {"grup1","grup2"})
+    @Test
     public void test01(){
         //amazon anasayfaya gidelim
         driver.get("https://www.amazon.com");
     }
 
-    @Test(dependsOnMethods = "test01")
+    @Test
     public void test02() {
         //nutella aratalim
         WebElement aramaKutusu= driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
@@ -44,7 +44,7 @@ public class C04_dependsOnMethod extends TestBase {
     @Test
     public void test03() {
         //sonuc yazisinin nutella icerdigini test edelim
-        WebElement sonucYazisi= driver.findElement(By.xpath("//*[@class=\"a-section a-spacing-small a-spacing-top-small\"]"));
+        WebElement sonucYazisi= driver.findElement(By.xpath("//*[@class='a-section a-spacing-small a-spacing-top-small']"));
         Assert.assertTrue(sonucYazisi.getText().contains("Nutella"));
 
         /*

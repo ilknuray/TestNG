@@ -10,7 +10,7 @@ import utilities.ReusableMethods;
 
 import java.util.List;
 
-public class Practice09 {
+public class Practice_09 {
     HerokuPages herokuPages;
 
     @Test
