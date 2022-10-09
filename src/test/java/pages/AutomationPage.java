@@ -64,4 +64,27 @@ public class AutomationPage {
 
     @FindBy(xpath = "//*[text()='Enter Account Information']")
     public WebElement account;
+
+    @FindBy(xpath = "//img[@src=\"/static/images/home/logo.png\"]")
+    public WebElement resimGorunuyormu;
+
+    @FindBy(xpath = "//*[text()=' Products']")
+    public WebElement productK;
+
+    @FindBy(xpath = "//*[@class='title text-center']")
+    public WebElement allPruduct;
+    @FindBy(xpath = "//*[@id='search_product']")
+    public WebElement pruductTikla;
+
+    @FindBy(xpath = "//button[@id='submit_search']")
+    public WebElement aramaButonu;
+
+    @FindBy(xpath = "//*[@class='title text-center']")
+    public WebElement arananUrun;
+
+    @FindBy(xpath = "//div[@class='overlay-content']")
+    public WebElement urunUstuneGit;
+
+    @FindBy(linkText = "View Product")
+    public WebElement viewProduct;
 }
