@@ -1,4 +1,4 @@
-package tests.Day18_pom;
+package tests.day17_PageObjectModel.Day18_pom;
 
 import com.github.javafaker.Faker;
 import org.testng.Assert;

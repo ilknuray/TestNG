@@ -1,4 +1,4 @@
-package tests.Day18_pom;
+package tests.day17_PageObjectModel.Day18_pom;
 
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
